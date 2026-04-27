@@ -742,6 +742,18 @@ function buildSyncRequest(args, tokens) {
 // Commands
 // ---------------------------------------------------------------------------
 
+function assertLspSuccess(method, result) {
+  if (
+    result &&
+    typeof result === "object" &&
+    typeof result.code === "number" &&
+    result.code !== 0
+  ) {
+    const message = result.message || "LSP request failed";
+    throw new Error(`${method} failed: ${message} (code ${result.code})`);
+  }
+}
+
 async function cmdAuth(args) {
   if (!args.tenantId) die("--tenant-id (or CPS_TENANT_ID) is required");
   if (!args.environmentUrl) die("--environment-url (or CPS_ENVIRONMENT_URL) is required");
@@ -856,6 +868,7 @@ async function cmdWithLsp(args, method) {
     const request = buildSyncRequest(args, tokens);
     log(`Calling ${method}...`);
     const result = await client.sendCustomRequest(method, request);
+    assertLspSuccess(method, result);
 
     process.stdout.write(
       JSON.stringify({ status: "ok", method, result }, null, 2) + "\n"
@@ -1350,6 +1363,7 @@ async function cmdClone(args) {
       "powerplatformls/cloneAgent",
       request
     );
+    assertLspSuccess("powerplatformls/cloneAgent", result);
 
     process.stdout.write(
       JSON.stringify({ status: "ok", method: "powerplatformls/cloneAgent", result }, null, 2) + "\n"
