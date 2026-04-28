@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: patterns
-description: "Repeatable reference architectures for building specific capabilities in Copilot Studio agents. Covers JIT glossary loading (customer acronyms, terminology), JIT user context provisioning (M365 profile, country, department), the shared OnActivity initialization pattern, and orchestrator-generated variables for knowledge routing. USE FOR: glossary, acronyms, user context, user profile, country-aware answers, JIT initialization, OnActivity provisioning, conversation-init, personalized knowledge, orchestrator variables, AutomaticTaskInput, knowledge routing, classification, category routing, country routing. DO NOT USE FOR: general knowledge sources (use add-knowledge), topic creation (use new-topic), dynamic topic redirects with Switch (use authoring-tips), preventing child agent responses (use authoring-tips)."
+description: "Index of repeatable implementation patterns for Copilot Studio agents. Use when the request needs a best-practice architecture or reusable pattern for building an agent capability. Read this index first, then open only the specific pattern file if it is relevant. Do not use for general knowledge sources or topic creation."
 context: fork
 agent: copilot-studio-author
 ---

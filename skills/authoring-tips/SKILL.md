@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: authoring-tips
-description: "Practical tips and workarounds learned from building Copilot Studio agents. Covers injecting date context via Power FX, dynamic topic redirects with Switch expressions, and preventing child agents from responding directly to users. USE FOR: date context, Today(), date-aware answers, dynamic redirect, Switch, BeginDialog, if/then/else replacement, child agent responses, completion setting, SendMessageTool, output variables, connected agents, workarounds, platform limitations. DO NOT USE FOR: JIT glossary or user context patterns (use patterns), knowledge routing with orchestrator variables (use patterns), general knowledge sources (use add-knowledge), topic creation (use new-topic)."
+description: "Index of practical authoring tips and workarounds for Copilot Studio agents. Use when the request needs best-practice guidance, an authoring technique, or a workaround for improving an agent's behavior. Read this index first, then open only the specific tip file if it is relevant. Do not use for repeatable implementation patterns, general knowledge sources, or topic creation."
 context: fork
 agent: copilot-studio-author
 ---
