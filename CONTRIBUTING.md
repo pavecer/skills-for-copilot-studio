@@ -109,8 +109,8 @@ Reference architectures that describe **how to build a specific capability** end
 
 **How to contribute:**
 1. Create a new `.md` file in `skills/patterns/` with the full implementation guide
-2. Add a routing entry in `skills/patterns/SKILL.md` following the existing format
-3. Update the `description` field in the SKILL.md frontmatter to include keywords for the new pattern
+2. Add an index entry in `skills/patterns/SKILL.md` following the existing format
+3. Keep the SKILL.md frontmatter description broad; do not add pattern-specific keyword lists unless the overall skill boundary changes
 
 ### `skills/authoring-tips/` — Authoring Tips
 
@@ -125,8 +125,8 @@ Practical tips, techniques, and workarounds learned from building agents with Co
 
 **How to contribute:**
 1. Create a new `.md` file in `skills/authoring-tips/` with the tip, including the problem, solution, and a YAML example
-2. Add a routing entry in `skills/authoring-tips/SKILL.md` following the existing format
-3. Update the `description` field in the SKILL.md frontmatter to include keywords for the new tip
+2. Add an index entry in `skills/authoring-tips/SKILL.md` following the existing format
+3. Keep the SKILL.md frontmatter description broad; do not add tip-specific keyword lists unless the overall skill boundary changes
 
 ### Choosing between the two
 
