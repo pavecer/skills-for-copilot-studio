@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: authoring-tips
-description: "Index of practical authoring tips and workarounds for Copilot Studio agents. Use when the request needs best-practice guidance, an authoring technique, or a workaround for improving an agent's behavior. Read this index first, then open only the specific tip file if it is relevant. Do not use for repeatable implementation patterns, general knowledge sources, or topic creation."
+description: "Index of practical authoring tips and workarounds for Copilot Studio agents. When a request may need best-practice guidance, an authoring technique, or a workaround for improving an agent's behavior, retrieve this index before deciding what detailed guidance is relevant. Do not decide from this frontmatter alone; use the index summaries, then open only the specific tip file if needed. Do not use for repeatable implementation patterns, general knowledge sources, or topic creation."
 context: fork
 agent: copilot-studio-author
 ---

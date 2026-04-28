@@ -1,7 +1,7 @@
 ---
 user-invocable: false
 name: patterns
-description: "Index of repeatable implementation patterns for Copilot Studio agents. Use when the request needs a best-practice architecture or reusable pattern for building an agent capability. Read this index first, then open only the specific pattern file if it is relevant. Do not use for general knowledge sources or topic creation."
+description: "Index of repeatable implementation patterns for Copilot Studio agents. When a request may need a best-practice architecture or reusable pattern for building an agent capability, retrieve this index before deciding what detailed guidance is relevant. Do not decide from this frontmatter alone; use the index summaries, then open only the specific pattern file if needed. Do not use for general knowledge sources or topic creation."
 context: fork
 agent: copilot-studio-author
 ---
